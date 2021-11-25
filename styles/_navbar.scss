@@ -1,0 +1,30 @@
+#navbar {
+  width: 100vw;
+  padding: 5px 10px;
+  background-color: $navbar;
+  height: 100px;
+  .content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    .navbar-brand {
+      #navbar-logo {
+        height: 70px;
+      }
+    }
+    .navbar-nav {
+      .navbar-items {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        list-style: none;
+        li {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
