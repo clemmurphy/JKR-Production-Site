@@ -41,14 +41,29 @@ main > * {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  z-index: -1;
 }
 
-.jumbotron .jumbotron-logo {
-  height: 200px;
+.jumbotron #jumbotron-text {
+  text-align: center;
+  font-size: 48px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.jumbotron #jumbotron-text #company-span {
+  color: #FF7916;
+}
+
+.jumbotron .downwards-arrow {
+  position: absolute;
+  bottom: 20px;
+  left: auto;
+  color: white;
 }
 
 .clients {
-  min-height: 650px;
+  min-height: 550px;
   background: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,6 +79,18 @@ main > * {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 40px 0;
+}
+
+.clients .client-header {
+  max-width: 1200px;
+  padding: 20px 100px;
+  font-size: 18px;
+}
+
+.clients .client-header .horizontal-marker {
+  height: 60px;
+  width: 80px;
+  border-bottom: 4px solid #FF7916;
 }
 
 .clients .client-carousel {
@@ -92,9 +119,31 @@ main > * {
   left: 20px;
 }
 
+.clients h3 {
+  margin-top: 40px;
+}
+
+.clients .client-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 800px;
+}
+
+.clients .client-logos > * {
+  width: 200px;
+  margin: 20px;
+}
+
 .insert {
   min-height: 450px;
-  background: lightgray;
+  background: #FF7916;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,7 +180,7 @@ main > * {
 }
 
 .contact > * {
-  width: 300px;
+  width: 400px;
   margin: 20px;
 }
 
@@ -141,9 +190,9 @@ main > * {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contact .contact-left img {
@@ -152,7 +201,7 @@ main > * {
 }
 
 .contact .contact-left p {
-  text-align: right;
+  text-align: center;
 }
 
 .contact .vertical-divider {
@@ -170,21 +219,33 @@ main > * {
 }
 
 .contact .contact-right form input, .contact .contact-right form button {
-  height: 40px;
+  height: 60px;
+  width: 100%;
 }
 
 .contact .contact-right form * {
   margin: 5px 0;
   padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+.contact .contact-right form button {
+  background-color: #3E23B8;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
   border: none;
-  background-color: pink;
 }
 
 #navbar {
   width: 100vw;
-  padding: 5px 10px;
-  background-color: gray;
+  position: absolute;
+  top: 0;
+  padding: 10px 20px;
   height: 100px;
+  color: white;
 }
 
 #navbar .content-container {
@@ -203,7 +264,7 @@ main > * {
 }
 
 #navbar .content-container .navbar-brand #navbar-logo {
-  height: 70px;
+  height: 60px;
 }
 
 #navbar .content-container .navbar-nav .navbar-items {
@@ -218,7 +279,7 @@ main > * {
 }
 
 #navbar .content-container .navbar-nav .navbar-items li {
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
 #footer {
@@ -229,11 +290,23 @@ main > * {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 5px 10px;
-  background-color: gray;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  padding: 5px 60px;
   height: 100px;
+}
+
+#footer #footer-links {
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+
+#footer #footer-links li {
+  margin-left: 20px;
 }
 /*# sourceMappingURL=main.css.map */

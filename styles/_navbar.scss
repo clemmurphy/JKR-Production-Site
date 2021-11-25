@@ -1,8 +1,10 @@
 #navbar {
   width: 100vw;
-  padding: 5px 10px;
-  background-color: $navbar;
+  position: absolute;
+  top: 0;
+  padding: 10px 20px;
   height: 100px;
+  color: white;
   .content-container {
     display: flex;
     align-items: center;
@@ -12,7 +14,7 @@
     height: 100%;
     .navbar-brand {
       #navbar-logo {
-        height: 70px;
+        height: 60px;
       }
     }
     .navbar-nav {
@@ -22,7 +24,7 @@
         text-decoration: none;
         list-style: none;
         li {
-          margin-right: 20px;
+          margin-left: 20px;
         }
       }
     }
