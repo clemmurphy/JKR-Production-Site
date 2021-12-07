@@ -323,6 +323,11 @@ main > * {
   transition: 0.5s;
 }
 
+#navbar .content-container .navbar-nav .navbar-items li a {
+  text-decoration: none;
+  color: white;
+}
+
 #footer {
   width: 100vw;
   display: -webkit-box;
