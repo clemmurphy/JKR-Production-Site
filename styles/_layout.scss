@@ -10,7 +10,7 @@ main {
 .jumbotron {
   height: 600px;
   background: $bg;
-  background-image: url('../img/jumbotron.jpg');
+  background-image: url('../img/live-event-bw.jpg');
   background-position: center;
   background-size: cover;
   display: flex;
@@ -19,19 +19,29 @@ main {
   justify-content: center;
   position: relative;
   z-index: -1;
-  #jumbotron-text {
-    text-align: center;
-    font-size: 48px;
-    color: rgba(255,255,255,0.8);
-    #company-span {
-      color: $orange
+  .blur {
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    #jumbotron-text {
+      text-align: center;
+      font-size: 48px;
+      color: rgba(255,255,255,0.8);
+      #company-span {
+        color: $orange
+      }
     }
-  }
-  .downwards-arrow {
-    position: absolute;
-    bottom: 20px;
-    left: auto;
-    color: white;
+    .downwards-arrow {
+      position: absolute;
+      bottom: 20px;
+      left: auto;
+      color: white;
+    }
   }
 }
 
@@ -62,15 +72,20 @@ main {
     .client-spotlight {
       margin: 40px;
       position: relative;
-      h3 {
+      img {
+        height: 300px;
+      }
+      .client-name {
         position: absolute;
         top: 20px;
         left: 20px;
+        color: white;
+        font-size: 32px;
       }
     }
   }
   h3 {
-    margin-top: 40px;
+    margin-top: 30px;
   }
   .client-logos {
     display: flex;
@@ -147,6 +162,7 @@ main {
         text-transform: uppercase;
         font-size: 18px;
         border: none;
+        cursor: pointer;
       }
     }
 

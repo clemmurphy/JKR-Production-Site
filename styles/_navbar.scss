@@ -6,6 +6,7 @@
   height: 100px;
   color: white;
   .content-container {
+    position: sticky;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,6 +26,14 @@
         list-style: none;
         li {
           margin-left: 20px;
+          padding-bottom: 8px;
+          border-bottom: rgba(0,0,0,0) 2px solid;
+          transition: 0.5s;
+          &:hover {
+            border-bottom: 2px $orange solid;
+            cursor: pointer;
+            transition: 0.5s;
+          }
         }
       }
     }

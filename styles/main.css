@@ -25,7 +25,7 @@ main > * {
 .jumbotron {
   height: 600px;
   background: lightgray;
-  background-image: url("../img/jumbotron.jpg");
+  background-image: url("../img/live-event-bw.jpg");
   background-position: center;
   background-size: cover;
   display: -webkit-box;
@@ -45,17 +45,38 @@ main > * {
   z-index: -1;
 }
 
-.jumbotron #jumbotron-text {
+.jumbotron .blur {
+  height: 100%;
+  width: 100%;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.jumbotron .blur #jumbotron-text {
   text-align: center;
   font-size: 48px;
   color: rgba(255, 255, 255, 0.8);
 }
 
-.jumbotron #jumbotron-text #company-span {
+.jumbotron .blur #jumbotron-text #company-span {
   color: #FF7916;
 }
 
-.jumbotron .downwards-arrow {
+.jumbotron .blur .downwards-arrow {
   position: absolute;
   bottom: 20px;
   left: auto;
@@ -113,14 +134,20 @@ main > * {
   position: relative;
 }
 
-.clients .client-carousel .client-spotlight h3 {
+.clients .client-carousel .client-spotlight img {
+  height: 300px;
+}
+
+.clients .client-carousel .client-spotlight .client-name {
   position: absolute;
   top: 20px;
   left: 20px;
+  color: white;
+  font-size: 32px;
 }
 
 .clients h3 {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .clients .client-logos {
@@ -237,6 +264,7 @@ main > * {
   text-transform: uppercase;
   font-size: 18px;
   border: none;
+  cursor: pointer;
 }
 
 #navbar {
@@ -249,6 +277,8 @@ main > * {
 }
 
 #navbar .content-container {
+  position: -webkit-sticky;
+  position: sticky;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -280,6 +310,17 @@ main > * {
 
 #navbar .content-container .navbar-nav .navbar-items li {
   margin-left: 20px;
+  padding-bottom: 8px;
+  border-bottom: rgba(0, 0, 0, 0) 2px solid;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#navbar .content-container .navbar-nav .navbar-items li:hover {
+  border-bottom: 2px #FF7916 solid;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #footer {
