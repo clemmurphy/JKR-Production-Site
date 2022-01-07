@@ -254,11 +254,11 @@ main > * {
   text-decoration: none;
   color: black;
 }
-#footer #footer-links li a:hover {
+#footer #footer-links li a i:hover {
   color: #FF7916;
   transition: 0.2s;
 }
-#footer #footer-links li a:visited:hover {
+#footer #footer-links li a i:visited:hover {
   color: #FF7916;
   transition: 0.2s;
 }

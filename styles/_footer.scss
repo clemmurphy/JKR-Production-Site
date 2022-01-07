@@ -20,11 +20,11 @@
           text-decoration: none;
           color: black;
         }
-        &:hover {
+        i:hover {
           color: $orange;
           transition: 0.2s;
         }
-        &:visited:hover {
+        i:visited:hover {
           color: $orange;
           transition: 0.2s;
         }
