@@ -12,6 +12,14 @@
     list-style: none;
     li {
       margin-left: 20px;
+      a {
+        transition: 0.2s;
+        color: black;
+        &:hover {
+          color: $orange;
+          transition: 0.2s;
+        }
+      }
     }
   }
 }
