@@ -248,10 +248,15 @@ main > * {
 #footer #footer-links li a {
   transition: 0.2s;
   color: black;
+  text-decoration: none;
 }
 #footer #footer-links li a:hover {
   color: #FF7916;
   transition: 0.2s;
+}
+#footer #footer-links li a:visited {
+  text-decoration: none;
+  color: black;
 }
 
 /*# sourceMappingURL=main.css.map */
