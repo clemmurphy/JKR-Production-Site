@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const quote = document.getElementById('quote-text')
   const companyDescriptionText = document.getElementById('company-span')
+  const descriptionPrefix = document.getElementById('description-prefix')
 
   const quotes = [
     'My live performance, it just comes from feeling an energy and emotion from the crowd. - Wiz Khalifa',
@@ -26,9 +27,34 @@ document.addEventListener('DOMContentLoaded', () => {
     'equipment hire'
   ]
 
+  const descriptionPrefixes = [
+    'Immersive',
+    'Forward-thinking',
+    'Exceptional',
+    'Bespoke',
+    'Revolutionary',
+    'Client-led',
+    'Extreme',
+    'Unique',
+    'Game-changing',
+  ]
+
+  // const date = new Date
+  // const monthDay = date.getDate()
+  // const month = date.getMonth()
+  // const day = date.getDay()
+
   const changeCompanyText = setInterval(() => {
     const randomIndex = Math.floor(Math.random() * companyDescriptions.length)
     companyDescriptionText.innerText = companyDescriptions[randomIndex]
+    const randomPrefixIndex = Math.floor(Math.random() * descriptionPrefixes.length)
+    descriptionPrefix.innerText = descriptionPrefixes[randomPrefixIndex]
+    // if (day === 3) {
+    //   companyDescriptionText.innerText = 'Wednesday my dudes'
+    // }
+    // if (month === 11) {
+    //   descriptionPrefix.innerText = 'Very Christmassy'
+    // }
   }, 2000)
 
 })
