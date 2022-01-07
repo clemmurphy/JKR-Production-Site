@@ -16,13 +16,13 @@
         transition: 0.2s;
         color: black;
         text-decoration: none;
-        &:hover {
-          color: $orange;
-          transition: 0.2s;
-        }
         &:visited {
           text-decoration: none;
           color: black;
+        }
+        &:hover {
+          color: $orange;
+          transition: 0.2s;
         }
       }
     }
