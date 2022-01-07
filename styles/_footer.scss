@@ -24,6 +24,10 @@
           color: $orange;
           transition: 0.2s;
         }
+        &:visited:hover {
+          color: $orange;
+          transition: 0.2s;
+        }
       }
     }
   }

@@ -258,5 +258,9 @@ main > * {
   color: #FF7916;
   transition: 0.2s;
 }
+#footer #footer-links li a:visited:hover {
+  color: #FF7916;
+  transition: 0.2s;
+}
 
 /*# sourceMappingURL=main.css.map */
